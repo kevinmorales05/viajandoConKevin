@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
           <a href="/gallery">Galería</a>
         </li>
         <li>
-          <a href="/contact">Redes Sociales</a>
+          <a href="/contact">Contacto</a>
         </li>
       </ul>
     </Nav>

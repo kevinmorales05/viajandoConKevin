@@ -34,7 +34,7 @@ export default function Contact() {
           <Main>
             <h1>Contacto</h1>
             <p>
-              ¿Tienes preguntas, comentarios o simplemente quieres saludar? Llena el
+              ¿Tienes preguntas, comentarios o quieres contratarme? Llena el
               formulario y estaré encantado de responderte.
             </p>
             <Form onSubmit={handleSubmit}>
