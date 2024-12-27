@@ -8,8 +8,8 @@ const postersData = [
   { id: 4, src: "/images/Gallery/gallery1.png", description: "Descripción de la imagen 4" },
   { id: 5, src: "/images/Gallery/gallery1.png", description: "Descripción de la imagen 5" },
   { id: 6, src: "/images/Gallery/gallery1.png", description: "Descripción de la imagen 6" },
-  { id: 7, src: "/images/Gallery/gallery1.png", description: "Descripción de la imagen 4" },
-  { id: 8, src: "/images/Gallery/gallery1.png", description: "Descripción de la imagen 5" },
+  { id: 7, src: "/images/Gallery/gallery1.png", description: "Descripción de la imagen 7" },
+  { id: 8, src: "/images/Gallery/gallery1.png", description: "Descripción de la imagen 8" },
 ];
 
 const PostersGrid = () => {
@@ -83,14 +83,13 @@ const HeroText = styled.h1`
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 1.5rem;
-  justify-content: center; /* Asegura que las imágenes estén centradas */
+  gap: 1rem;
+  justify-content: center;
   width: 90%;
-  margin-bottom: 2rem;
 
   @media (max-width: 768px) {
-    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
-    justify-items: center; /* Centra los ítems en pantallas pequeñas */
+    grid-template-columns: 1fr;
+    justify-items: center;
     width: 95%;
   }
 `;
@@ -98,7 +97,7 @@ const Grid = styled.div`
 const Poster = styled.div`
   position: relative;
   width: 100%;
-  max-width: 200px; /* Limita el ancho máximo */
+  max-width: 200px;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
@@ -108,13 +107,13 @@ const Poster = styled.div`
   }
 
   @media (max-width: 768px) {
-    max-width: 90%; /* Ocupa el 90% del ancho en dispositivos móviles */
+    max-width: 90%;
   }
 `;
 
 const ImageWrapper = styled.div`
   width: 100%;
-  aspect-ratio: 9 / 16; /* Controla la proporción 9:16 */
+  padding-top: 177.77%; /* Mantiene proporción 9:16 */
   position: relative;
   overflow: hidden;
   border-radius: 12px;
@@ -126,7 +125,7 @@ const ImageWrapper = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Asegura que la imagen no se deforme */
+    object-fit: cover;
     border-radius: 12px;
   }
 `;

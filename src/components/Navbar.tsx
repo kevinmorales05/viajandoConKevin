@@ -25,9 +25,9 @@ const Navbar: React.FC = () => {
         <li>
           <a href="/stories">Historias</a>
         </li>
-        <li>
+        {/* <li>
           <a href="/gallery">Galería</a>
-        </li>
+        </li> */}
         <li>
           <a href="/contact">Contacto</a>
         </li>

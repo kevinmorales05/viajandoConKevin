@@ -23,6 +23,7 @@ const FooterSection = styled.footer`
   padding: 2rem;
   text-align: center;
   background-color: #222;
+ 
   color: #fff;
   .social-icons {
     display: flex;
