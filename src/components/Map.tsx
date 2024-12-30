@@ -2,7 +2,6 @@ import dynamic from "next/dynamic";
 import styled from "@emotion/styled";
 import "leaflet/dist/leaflet.css";
 
-import L from "leaflet";
 
 // Carga Leaflet dinámicamente
 let L: typeof import("leaflet") | undefined = undefined;

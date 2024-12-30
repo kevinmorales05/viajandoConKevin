@@ -15,7 +15,7 @@ const postersData = [
 const PostersGrid = () => {
   const [activeDescription, setActiveDescription] = useState(null);
 
-  const handleImageClick = (description) => {
+  const handleImageClick = (description: any) => {
     setActiveDescription(description);
     setTimeout(() => setActiveDescription(null), 3000); // Oculta después de 3 segundos
   };
