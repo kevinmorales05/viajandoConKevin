@@ -1,0 +1,12 @@
+body {
+    font-family: 'Lato', sans-serif; /* Fuente para párrafos */
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* Fuente para títulos */
+  }
+  
+  h4, h5, h6 {
+    font-family: 'Roboto Slab', serif; /* Fuente para subtítulos */
+  }
+  
