@@ -13,24 +13,25 @@ const Stories: React.FC = () => {
         "Me perdí en la ciudad de Seul, almorcé con un amable extraño y aprendí a usar el metro.",
       images: [
         {
+          src: "/images/seoul1.png",
+          alt: "Seoul Streets",
+          caption: "Vistiendo ropa tradicional",
+        },
+        {
           src: "/images/perdidosSeul.png",
           alt: "Seoul Metro",
           caption: "Usando el metro en Seúl",
         },
+        
         {
-          src: "seoul2.jpg",
-          alt: "Seoul Streets",
-          caption: "Callejones de Seúl iluminados",
-        },
-        {
-          src: "seoul3.jpg",
+          src: "/images/seoul2.png",
           alt: "Seoul Food",
-          caption: "Comida coreana deliciosa",
+          caption: "Lotte Tower",
         },
         {
-          src: "seoul4.jpg",
+          src: "/images/seoul3.png",
           alt: "Seoul View",
-          caption: "Vista nocturna de Seúl",
+          caption: "Caminata casual en Seúl",
         },
       ],
       story:
@@ -49,17 +50,17 @@ const Stories: React.FC = () => {
           caption: "Tomando una foto en una plaza",
         },
         {
-          src: "singapore2.jpg",
+          src: "/images/singapore1.png",
           alt: "Singapore Skyline",
-          caption: "Atardecer en Singapur",
+          caption: "Un marco irresistible",
         },
         {
-          src: "singapore3.jpg",
+          src: "/images/singapore2.png",
           alt: "Singapore Culture",
-          caption: "Explorando la cultura local",
+          caption: "Skyline de la ciudad",
         },
         {
-          src: "singapore4.jpg",
+          src: "/images/singapore3.png",
           alt: "Singapore Garden",
           caption: "Jardines de Singapur",
         },
@@ -69,7 +70,7 @@ const Stories: React.FC = () => {
     },
     {
       title: "Conociendo Machuppichu",
-      date: "24 de diciembre",
+      date: "24 de diciembre de 2024",
       country: "Perú, Machupicchu",
       description: "El tren más hermoso del mundo",
       images: [
