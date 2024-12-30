@@ -9,27 +9,36 @@ const Navbar: React.FC = () => {
   return (
     <Nav>
       <div className="logo">
-        {" "}
-        <Link href={'/'}>ViajandoConKevin</Link>
+        <Link href="/">ViajandoConKevin</Link>
       </div>
       <button className="hamburger" onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? <FaTimes /> : <FaBars />}
       </button>
       <ul className={isOpen ? "nav-links open" : "nav-links"}>
         <li>
-          <a href="/about">Sobre Mí</a>
+          <Link href="/about">
+            Sobre Mí
+          </Link>
         </li>
         <li>
-          <a href="/countries">Países Visitados</a>
+          <Link href="/countries">
+           Países Visitados
+          </Link>
         </li>
         <li>
-          <a href="/stories">Historias</a>
+          <Link href="/stories">
+            Historias
+          </Link>
         </li>
         {/* <li>
-          <a href="/gallery">Galería</a>
+          <Link href="/gallery">
+            <a>Galería</a>
+          </Link>
         </li> */}
         <li>
-          <a href="/contact">Contacto</a>
+          <Link href="/contact">
+            Contacto
+          </Link>
         </li>
       </ul>
     </Nav>
@@ -49,7 +58,7 @@ const Nav = styled.nav`
   .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color:white;
+    color: white;
   }
   .hamburger {
     display: none;
@@ -62,11 +71,10 @@ const Nav = styled.nav`
   .nav-links {
     display: flex;
     list-style: none;
-    
     gap: 1.5rem;
     &.open {
       display: block;
-      background:black;
+      background: black;
     }
   }
   @media (max-width: 768px) {
