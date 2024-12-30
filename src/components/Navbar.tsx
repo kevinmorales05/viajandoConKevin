@@ -41,13 +41,15 @@ const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: #f5f5f5;
+  background: black;
+  color: white;
   position: sticky;
   top: 0;
   z-index: 1000;
   .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    color:white;
   }
   .hamburger {
     display: none;
@@ -55,13 +57,16 @@ const Nav = styled.nav`
     border: none;
     cursor: pointer;
     font-size: 1.5rem;
+    color: white;
   }
   .nav-links {
     display: flex;
     list-style: none;
+    
     gap: 1.5rem;
     &.open {
       display: block;
+      background:black;
     }
   }
   @media (max-width: 768px) {
